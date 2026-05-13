@@ -16,13 +16,10 @@ compiler:
     - '-Winit-self'
     - '-Winline'
     - '-Winvalid-pch'
-    - '-Wmissing-declarations'
     - '-Wmissing-include-dirs'
-    - '-Wmissing-prototypes'
     - '-Wnonnull'
     - '-Wpacked'
     - '-Wpointer-arith'
-    - '-Wredundant-decls'
     - '-Wswitch-default'
     - '-Wstrict-aliasing'
     - '-Wstrict-overflow=5'
@@ -33,10 +30,7 @@ compiler:
     - '-Wshadow'
     - '-Wundef'
     - '-Wwrite-strings'
-    - '-Wno-missing-declarations'
-    - '-Wno-missing-prototypes'
     - '-Wno-nested-externs'
-    - '-Wno-redundant-decls'
     - '-Wno-unused-parameter'
     - '-Wno-variadic-macros'
     - '-Wbad-function-cast'
@@ -53,11 +47,11 @@ compiler:
     items:
       - 'src/'
       - '../src/'
+      - 'testdata/'
       - *unit_tests_path
   defines:
     prefix: '-D'
     items:
-      - UNITY_OUTPUT_CHAR=putcharSpy
       - UNITY_INCLUDE_DOUBLE
       - UNITY_SUPPORT_64
       - UNITY_OUTPUT_RESULTS_FILE
